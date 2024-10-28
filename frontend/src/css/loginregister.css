@@ -1,0 +1,92 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Limit modal width on larger screens */
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.modal-content label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.modal-content input {
+  width: 100%; /* Ensure inputs don't exceed the modal width */
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box; /* Prevents inputs from overflowing */
+}
+
+.modal-content .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.modal-content .cancel-btn {
+  background-color: #e3342f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .cancel-btn:hover {
+  background-color: #cc1f1a;
+}
+
+
+.register-btn, .login-btn {
+  background-color: #3490dc;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.register-btn:hover, .login-btn:hover {
+  background-color: #2779bd;
+}
+
+.button-containers {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  display: flex;
+  gap: 10px; /* Butonlar arasındaki boşluk */
+  z-index: 1000; /* Modal üstünde olmasını sağlar */
+}
+
+
+
+
+
